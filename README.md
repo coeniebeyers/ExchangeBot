@@ -1,0 +1,2 @@
+# ExchangeBot
+Dumb bot
