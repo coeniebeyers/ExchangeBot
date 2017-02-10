@@ -74,6 +74,7 @@ function submitOrder(order, cb){
 
 var priceIncrement = 0.01;
 var amount = 0.01;
+var depth = 0.1;
 
 function placeInnerMostAsk(asks, cb){
   var price = Number(asks[0].price) - priceIncrement;
@@ -176,7 +177,7 @@ function main(){
 function run(){
   setInterval(function(){
     main();
-  }, 5000);
+  }, 100);
 }
 
 run();
